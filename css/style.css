@@ -6,7 +6,9 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 52.5%;
+    width: 80VW;
+    margin: 0 auto;
 }
 
 .container {
@@ -14,6 +16,14 @@ html {
     margin: 0 auto;
     padding: 9.6rem 2.4rem;
 
+}
+
+.services-section {
+    background-color: #f7fcff;
+}
+
+.hospital-info>.container:first-child {
+    padding: 4.4rem 0 0 0;
 }
 
 li,
@@ -24,7 +34,7 @@ p {
     letter-spacing: .1rem;
     font-weight: 400;
     color: var(--para-color);
- ; 
+    ;
 }
 
 a {
@@ -44,36 +54,52 @@ li {
     --bg-color: #ffffff;
     --heading-color: #2F4F4F;
     --para-color: #4d5965;
-    --btn-box-shadow:box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    --btn-box-shadow: box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /* layout */
-.grid-three--col{
+.grid-three--col {
     display: grid;
-   grid-template-columns: repeat(3, 1fr);
-  
+    grid-template-columns: repeat(3, 1fr);
+
 
 }
 
+.grid-four-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
 
 /* modules or reuse*/
-.common-heading{
+.common-heading {
     font-size: 3.5rem;
     font-weight: 700;
     text-transform: capitalize;
-  
+
 }
 
-.common-sub-heading{
+.fa-solid {
+    font-size: 2.5rem;
+    padding: 2.5rem;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+}
+
+
+.common-sub-heading {
     color: #212121;
 }
 
-.common-title{
+.common-title {
     font-size: 2.5rem;
     margin: 2.5rem 0 1.5rem 0;
 }
+
 /* navbar start */
 .navbar-section {
+
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -94,10 +120,10 @@ li {
         color: var(--heading-color);
         text-transform: uppercase;
         display: inline-block;
-        font-size: 2.2rem;
+        font-size: 2rem;
         position: relative;
 
-        &::after{
+        &::after {
             position: absolute;
             content: '';
             width: 0;
@@ -105,12 +131,13 @@ li {
             bottom: -.3rem;
             left: 0;
             transition: all .2s linear;
-           
+
         }
     }
-    & li a:hover::after{
-     width: 100%;
-     color: var(--main-color);
+
+    & li a:hover::after {
+        width: 100%;
+        color: var(--main-color);
     }
 }
 
@@ -119,21 +146,22 @@ li {
 /* main section top start */
 
 
-.grid-container-one{
+.grid-container-one {
     display: grid;
 
-   
 
-} 
 
-.grid-container-one{
-    grid-template-columns: repeat(2,1fr);
+}
+
+.grid-container-one {
+    grid-template-columns: repeat(2, 1fr);
     gap: 6.4rem;
     padding: 0 10rem;
-   
+
 }
-.btn{
-    padding:  1.2rem 3.2rem ;
+
+.btn {
+    padding: 1.2rem 3.2rem;
     background-color: var(--main-color);
     display: inline-block;
     color: white;
@@ -141,39 +169,41 @@ li {
     margin-bottom: 2rem;
 }
 
-.btn:hover { 
-box-shadow: var(--btn-box-shadow);
-background-color: rgb(26, 26, 180);
-cursor: pointer;
+.btn:hover {
+    box-shadow: var(--btn-box-shadow);
+    background-color: rgb(26, 26, 180);
+    cursor: pointer;
 
 }
-main{
-       height: auto;
-       width: 90%;
-       margin:  0 auto;
-    background-image: linear-gradient(
-        90deg,
-        #ffffff,
-        #6dd5ed);
 
-        position: relative;
-       
-      
-       
-        
+main {
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    background-image: linear-gradient(90deg,
+            #ffffff,
+            #6dd5ed);
+
+    position: relative;
+
+
+
+
 }
-.grid-container-one .grid-img img{
-   
+
+.grid-container-one .grid-img img {
+
     width: 100%;
     height: auto;
     transform: scaleX(-1);
     border-radius: 1rem;
 }
-.main-section-top .grid-container-one{
-    
+
+.main-section-top .grid-container-one {
+
     align-items: center;
 
-    & .grid-content .grid-content-sub-heading{
+    & .grid-content .grid-content-sub-heading {
         text-transform: uppercase;
         color: var(--main-color);
         letter-spacing: .2rem;
@@ -181,23 +211,25 @@ main{
         font-weight: 700;
         word-spacing: .2rem;
     }
-    & .grid-content .grid-content-main-heading{
-      
+
+    & .grid-content .grid-content-main-heading {
+
         font-size: 6rem;
         font-weight: 800;
         line-height: 1.5;
         font-family: "urbanist";
         color: var(--heading-color);
     }
-    & .grid-content .content-para{
+
+    & .grid-content .content-para {
         color: rgb(22, 22, 22);
         margin: 1rem 0 5rem 0;
         font-size: 2rem;
         font-weight: 700;
         line-height: 1.5;
-     
+
     }
-   
+
 }
 
 /* shape divider */
@@ -216,48 +248,342 @@ main{
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
-  
- 
+
+
 }
 
 .custom-shape-divider-bottom-1722945187 .shape-fill {
     fill: #ffffff;
-   
+
 }
+
 /* main section top end */
 
 
 /* about section start */
 .about-section {
- width: 90%;
- height: auto;
- margin: 0 auto;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
 
 }
 
-.about-section .grid-three--col .about-div{
+.about-section .grid-three--col .about-div {
     /* /* display: flex;
     justify-content: space-evenly;
     align-items: center; */
-    text-align: center; 
+    text-align: center;
 }
 
 
 
-.about-section .grid-three--col .about-div .icon img{
-width: 13rem;
-height: auto;
-background-color: var(--supporting-color);
-border-radius: 50%;
-padding: 2.5rem;
-transition: all .5s linear;
+.about-section .grid-three--col .about-div .icon img {
+    width: 13rem;
+    height: auto;
+    background-color: var(--supporting-color);
+    border-radius: 50%;
+    padding: 2.5rem;
+    transition: all .5s linear;
 }
-.about-section .grid-three--col .about-div .icon:hover > img {
 
-rotate: 360deg;
-background-color: purple;
+.about-section .grid-three--col .about-div .icon:hover>img {
+
+    rotate: 360deg;
+    background-color: purple;
 
 }
 
 
 /* about section end */
+
+/* services section start */
+
+.grid-four-col {
+    gap: 3.2rem;
+}
+
+.grid-four-col .services-div {
+    padding: 3.2rem;
+}
+
+.services-div:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.services-div:nth-of-type(1) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+.services-div:nth-of-type(2) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+.services-div:nth-of-type(3) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+.services-div:nth-of-type(4) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+.services-div:nth-of-type(5) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+.services-div:nth-of-type(6) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+.services-div:nth-of-type(7) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+.services-div:nth-of-type(8) .icon .fa-solid {
+    background-color: #F1DEC6;
+    color: var(--heading-color);
+}
+
+/* services section end */
+
+
+/* hospital info section start */
+.comman-heading-hl {
+    width: 6rem;
+    aspect-ratio: 1;
+    background-color: var(--supporting-color);
+    color: var(--heading-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 2.5rem;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+
+.main-info {
+    width: 90vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.main-info .grid-three--col-info .text-align--right .doctor-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    text-align: right;
+}
+
+.main-info {
+    gap: 9.6rem;
+}
+
+.center-img img {
+    width: 90%;
+    height: auto;
+    filter: drop-shadow(2px 5px 10px rgb(103, 101, 101));
+
+    /* margin-left: 3rem; */
+}
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-img img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+}
+
+.center-img figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55rem;
+    width: 55rem;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        background-color: var(--main-color);
+        height: 45rem;
+        width: 45rem;
+        border-radius: 50%;
+        z-index: -1;
+        animation: circlebefore 8s ease-in-out infinite;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        border: .5rem solid #F5DEB3;
+        height: 48rem;
+        width: 48rem;
+        border-radius: 50%;
+        z-index: -2;
+        animation: circle 5s infinite;
+    }
+
+}
+
+@keyframes circlebefore {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: rgb(20, 218, 50);
+    }
+
+    40% {
+        background-color: rgb(156, 187, 20);
+    }
+
+    60% {
+        background-color: rgb(39, 16, 189);
+    }
+
+    80% {
+        background-color: rgb(206, 17, 153);
+    }
+
+    100% {
+        background-color: rgb(227, 13, 74);
+    }
+}
+
+.doctor-info {
+    margin-top: 3.2rem;
+}
+
+/* hospital info section end */
+
+
+/* <!-- contact-home section start --> */
+
+.contact-home-section {
+    min-height: 20rem;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-bottom: 6rem;
+    border-radius: .2rem;
+    padding: 0 3.2rem;
+    position: relative;
+    bottom: -15rem;
+    z-index: 11;
+    background-color: var(--bg-color);
+
+    & .grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6.4rem;
+
+    }
+}
+
+.contact-home-section .fa-solid {
+    margin-left: .5rem;
+    font-size: 1.8rem;
+    padding: .2rem;
+    background-color: white;
+    color: var(--main-color);
+}
+
+.contact-home-section a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.contact-home-section .contact-image img {
+    width: 70%;
+    height: auto;
+}
+
+.contact-title {
+    font-size: 3.4rem;
+    line-height: 1.2;
+}
+
+.contact-content p {
+    margin: 1.2rem 0 2.4rem 0;
+}
+
+
+/* <!-- contact-home section end --> */
+
+
+
+
+/* <!-- footer section start --> */
+
+footer {
+    background-color: #040d12;
+    padding-top: 15rem;
+
+}
+
+.footer-1-div,
+.footer-2-div,
+.footer-3-div,
+.footer-4-div {
+    margin-top: 5rem;
+}
+
+footer * {
+    color: #fff;
+
+}
+
+.footer-2-div {
+    justify-content: right;
+}
+
+.footer-subheading {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.footer-1-div p {
+    margin: 1.2rem 0 3.2rem 0;
+}
+
+.footer-1-div .socail-footer-icon {
+    display: flex;
+    gap: 3rem;
+
+}
+
+.footer-1-div .socail-footer-icon a {
+
+    & .fa-brands {
+        font-size: 2rem;
+        width: 5rem;
+        border-radius: 50%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f7fcff;
+        color: var(--main-color);
+    }
+}
+
+/* <!-- footer section end --> */
