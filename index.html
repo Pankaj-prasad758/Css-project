@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descrition" content="Discover a haven of holistic well-being. Our center is dedicated to helping
+    you achieve optimal health and balance. Let us guide you on your journey toa healthier, happier you.
+    We're here to support your wellness goals.">
+    <meta name="keyword"
+        content="Harmony Health Center, Harmony Hospital,Health Center Services,Medical Treatment,Emergency Care,Healthcare Facility, Specialist Doctors,Primary Care Physicians,Outpatient Care,Inpatient Services,Surgical Services,Diagnostic Imaging, Patient Care Services, Chronic Disease Management,Pediatric Services,Maternity Care, Urgent Medical Care, Rehabilitation Services, Wellness and Preventive Care, Healthcare Providers Near Me">
+    <meta name="robot" content="index, follow">
     <title>Harmony Health Center</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -14,6 +20,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="/images/new-harmony-logo.png" type="image/x-icon">
+    <style>
+        .navbar-section .navbar.nav-items #nav-link {
+            font-weight: 600;
+            color: var(--heading-color);
+            text-transform: uppercase;
+            display: inline-block;
+            font-size: 2rem;
+        }
+    </style>
 
 </head>
 
@@ -24,17 +41,16 @@
         <div class="container">
             <div class="navbar-brand">
                 <a href="index.html">
-                    <img src="/images/harmony-health-center-logo.jpg" alt="harmony health center logo" width="100px"
-                        height="auto">
+                    <img src="/images/new-harmony-logo.png" alt="harmony health center logo" height="auto">
                 </a>
             </div>
             <nav class="navbar">
-                <ul>
-                    <li class="nav-items"><a href="/" class="nav-link">Home</a></li>
-                    <li class="nav-items"><a href="/" class="nav-link">About</a></li>
-                    <li class="nav-items"><a href="/" class="nav-link">Services</a></li>
-                    <li class="nav-items"><a href="/" class="nav-link">Blog</a></li>
-                    <li class="nav-items"><a href="/" class="nav-link">Contact</a></li>
+                <ul class="nav-ul-items">
+                    <li class="nav-items"><a href="index.html" id="nav-link">Home</a></li>
+                    <li class="nav-items"><a href="about.html" id="nav-link">About</a></li>
+                    <li class="nav-items"><a href="services.html" id="nav-link">Services</a></li>
+                    <li class="nav-items"><a href="blog.html" id="nav-link">Blog</a></li>
+                    <li class="nav-items"><a href="#contact-home--section" id="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -45,28 +61,27 @@
     <!-- main section top start -->
     <main>
         <div class="main-section-top">
-            <div class="grid-container-one grid ">
-                <div class="grid-content">
-                    <p class="grid-content-sub-heading">Lorem ipsum dolor sit amet.</p>
+            <div class="grid-container-one grid  grid-two-col ">
+                <div class="grid-content ">
+                    <p class="grid-content-sub-heading">Harmony Health Center: Compassionate care, closer to you.</p>
                     <h1 class="grid-content-main-heading">Welcome to Harmony Health Center</h1>
                     <p class="content-para">Discover a haven of holistic well-being. Our center is dedicated to helping
-                        <br> you achieve optimal
-                        health and balance. Let us guide you on your journey to <br> a healthier, happier you.
-
+                        you achieve optimal
+                        health and balance. Let us guide you on your journey toa healthier, happier you.
                         We're here to support your wellness goals.
                     </p>
                     <div class="grid-content-btn">
-                        <a href="service.html" class=" btn btn-one">Services</a>
+                        <a href="services.html" class=" btn btn-one">Services</a>
                     </div>
                 </div>
-                <div class="grid-img">
+                <div class="grid-img" data-aos="fade-left">
                     <figure>
                         <img src="/images/main-section--top.jpg" alt="hospital-environment-photo">
                     </figure>
                 </div>
             </div>
         </div>
-        <div class="custom-shape-divider-bottom-1722945187">
+        <div class="custom-shape-divider-bottom-1723267518">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
@@ -81,32 +96,31 @@
     <section class="about-section">
         <div class="container">
             <h2 class="common-heading">About Harmony health center</h2>
-            <p class="common-sub-heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, culpa.</p>
+            <p class="common-sub-heading">Harmony Health Center is a multifunctional hospital providing comprehensive
+                medical services, from emergency care to specialized treatments, all aimed at enhancing patient
+                well-being with expert and compassionate care</p>
         </div>
 
-        <div class=" grid grid-three--col">
-            <div class="about-div">
+        <div class=" grid grid-three--col about-section-content">
+            <div class="about-div" data-aos="fade-up">
                 <div class="icon">
                     <img src="/images/icon-one.png" alt="about-us">
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Comprehensive Medical Services</h3>
+                    <p>Offers a wide range of care, including emergency and specialized treatments</p>
                 </div>
             </div>
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon">
                     <img src="/images/icon-two.png" alt="about-us">
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br> adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Expert Care</h3>
+                    <p>Provides compassionate and high-quality medical attention from skilled professionals.</p>
                 </div>
             </div>
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" data-aos-delay="600">
                 <div class="icon">
                     <img src="/images/icon-three.png" alt="about-us">
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Enhanced Patient Well-being</h3>
+                    <p>Focuses on improving health outcomes and overall patient satisfaction.</p>
                 </div>
             </div>
 
@@ -120,42 +134,39 @@
     <section class="services-section">
         <div class="container">
             <h2 class="common-heading">Explore Our Services </h2>
-            <p class="common-sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsum.</p>
+            <p class="common-sub-heading">Explore our services at Harmony Health Center, where we offer expert care
+                across a range of medical specialties to meet all your health needs.</p>
         </div>
-        <div class="container grid grid-four-col">
+        <div class="container grid grid-four-col services-div-four">
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Medical Treatment</h3>
+                    <p>Comprehensive care for various health conditions.</p>
                 </div>
             </div>
 
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-tablets"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Emergency Care</h3>
+                    <p>Immediate, life-saving services for urgent medical needs.</p>
                 </div>
 
             </div>
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Healthcare Facility</h3>
+                    <p>State-of-the-art facility providing a wide range of medical services</p>
                 </div>
             </div>
 
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Specialist Doctors</h3>
+                    <p>Access to experienced professionals across multiple specialties</p>
                 </div>
             </div>
 
@@ -163,9 +174,8 @@
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Outpatient Care</h3>
+                    <p>Convenient care for patients not needing overnight stays</p>
                 </div>
             </div>
 
@@ -173,9 +183,8 @@
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Inpatient Services</h3>
+                    <p>Comprehensive care for patients requiring hospitalization</p>
                 </div>
             </div>
 
@@ -183,9 +192,8 @@
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Surgical Services</h3>
+                    <p>Advanced surgical procedures with expert care</p>
                 </div>
             </div>
 
@@ -193,9 +201,8 @@
             <div class="services-div">
                 <div class="icon">
                     <i class="fa-solid fa-stethoscope"></i>
-                    <h3 class="common-title">About</h3>
-                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                        Repudiandae, magni!</p>
+                    <h3 class="common-title">Chronic Disease Management</h3>
+                    <p>Ongoing support and treatment for long-term health conditions</p>
                 </div>
             </div>
 
@@ -207,61 +214,69 @@
     <!-- harmony hospital section  info start -->
     <section class="hospital-info">
         <div class="container">
-            <h2 class="common-heading">About Harmony health center</h2>
-            <p class="common-sub-heading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, culpa.</p>
+            <h2 class="common-heading">Expert Doctors at Harmony Health Center</h2>
+            <p class="common-sub-heading">At Harmony Health Center, our team of skilled doctors brings a wealth of
+                expertise across various specialties, committed to delivering exceptional, compassionate care tailored
+                to your needs.</p>
         </div>
 
         <div class=" container main-info">
-            <div class="container grid grid-three--col-info">
+            <div class="container grid grid-three--col-info main-info-left-div">
                 <div class="left-div text-align--right">
-                    <div class="doctor-info">
+                    <div class="doctor-info" data-aos="fade-up">
                         <p class="comman-heading-hl">1</p>
-                        <h3 class="common-title">About</h3>
-                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                            Repudiandae, magni!</p>
+                        <h3 class="common-title">Dr. Emily Turner, MD - Cardiologist</h3>
+                        <p>Degree: MD, Cardiology Fellowship <br>
+                            Experience: 15 years <br>
+                            Profile: Expert in heart disease management and cardiovascular health.</p>
                     </div>
-                    <div class="doctor-info">
+                    <div class="doctor-info" data-aos="fade-up" data-aos-delay="200">
                         <p class="comman-heading-hl">2</p>
-                        <h3 class="common-title">About</h3>
-                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                            Repudiandae, magni!</p>
+                        <h3 class="common-title">Dr. Michael Harris, MD - Orthopedic Surgeon</h3>
+                        <p>Degree: MD, Orthopedic Surgery Residency <br>
+                            Experience: 12 years <br>
+                            Profile: Specializes in joint replacements and sports injuries</p>
                     </div>
-                    <div class="doctor-info">
+                    <div class="doctor-info" data-aos="fade-up" data-aos-delay="400">
                         <p class="comman-heading-hl">3</p>
-                        <h3 class="common-title">About</h3>
-                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                            Repudiandae, magni!</p>
+                        <h3 class="common-title">Dr. Olivia Martinez, MD - Pediatrician</h3>
+                        <p>Degree: MD, Pediatrics Residency <br>
+                            Experience: 10 years <br>
+                            Profile: Provides comprehensive care for children’s health and development</p>
                     </div>
                 </div>
             </div>
 
             <!-- middle img -->
-            <div class="center-img">
+            <div class="center-img" data-aos="zoom-in">
                 <figure>
                     <img src="/images/doctor-no-bg.png" alt="lady doctor">
                 </figure>
             </div>
 
             <!-- right side of the div -->
-            <div class="container grid grid-three--col-info">
+            <div class="container grid grid-three--col-info main-info-right-div">
                 <div class="right-div text-align--left">
-                    <div class="doctor-info">
+                    <div class="doctor-info" data-aos="fade-up">
                         <p class="comman-heading-hl">4</p>
-                        <h3 class="common-title">About</h3>
-                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                            Repudiandae, magni!</p>
+                        <h3 class="common-title">Dr. Aiden Clark, MD - Oncologist</h3>
+                        <p>Degree: MD, Oncology Fellowship <br>
+                            Experience: 18 years <br>
+                            Profile: Focuses on cancer treatment and personalized care plans.</p>
                     </div>
-                    <div class="doctor-info">
+                    <div class="doctor-info" data-aos="fade-up" data-aos-delay="200">
                         <p class="comman-heading-hl">5</p>
-                        <h3 class="common-title">About</h3>
-                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                            Repudiandae, magni!</p>
+                        <h3 class="common-title">Dr. Sophia Lee, MD - Gynecologist</h3>
+                        <p>Degree: MD, Obstetrics and Gynecology Residency <br>
+                            Experience: 14 years <br>
+                            Profile: Expert in women's reproductive health and prenatal care.</p>
                     </div>
-                    <div class="doctor-info">
+                    <div class="doctor-info" data-aos="fade-up" data-aos-delay="400">
                         <p class="comman-heading-hl">6</p>
-                        <h3 class="common-title">About</h3>
-                        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                            Repudiandae, magni!</p>
+                        <h3 class="common-title">Dr. Daniel Nguyen, MD - Neurologist</h3>
+                        <p>Degree: MD, Neurology Fellowship <br>
+                            Experience: 16 years <br>
+                            Profile: Specializes in neurological disorders and advanced diagnostics.</p>
                     </div>
                 </div>
             </div>
@@ -273,18 +288,21 @@
 
 
     <!-- contact-home section start -->
-    <section class="contact-home-section" id="">
+    <section class="contact-home-section" id="contact-home--section">
         <div class="container grid grid-two--col">
             <div class="contact-content">
                 <h3 class="contact-title">contact harmony health center</h3>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur <br>adipisicing elit.
-                    Repudiandae, magni!</p>
+                <p>Contact Harmony Health Center for expert medical care and personalized service. Reach us via phone,
+                    email, or our online contact form to schedule an appointment or get more information. <br>
+                    +91 666-108-999
+
+                </p>
                 <div class="btn">
                     <a href="contact.html">Contact now <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="contact-image">
-                <img src="/images/hospital.jpg" alt="hospital-ward">
+                <img src="/images/hospital-webp.webp" alt="hospital-ward">
             </div>
         </div>
     </section>
@@ -293,63 +311,71 @@
 
     <!-- footer section start -->
 
-    <footer class="container grid grid-four-col">
+    <footer class="container grid grid-four-col footer-div">
         <div class="footer-1-div">
             <div class="logo-brand">
-                <a href="index.html" class="footer-subheading">Footer</a>
+                <a href="index.html" class="footer-subheading">Harmony Health Center</a>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>123 Wellness Ave, Suite 100 <br>
+                Health City, HC 12345 <br>
+                Phone: (123) 456-7890 <br>
+                Email: info@harmonyhealthcenter.com</p>
+            <p>Connect With Us</p>
             <div class="socail-footer-icon">
                 <a href="discord.com">
-                <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-facebook"></i>
                 </a>
                 <a href="discord.com">
-                <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-twitter"></i>
                 </a>
                 <a href="discord.com">
-                <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
-    
+
         </div>
-       
+
         <div class="footer-2-div">
             <p class="footer-sub-handing"> Contact </p>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-          
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="index.html">Patient Information</a></li>
+                <li><a href="index.html">Insurance & Billing</a></li>
+            </ul>
+
         </div>
         <div class="footer-3-div">
             <p class="footer-sub-handing"> Feedback </p>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-           
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html">FAQs</a></li>
+                <li><a href="index.html">Doctors</a></li>
+                <li><a href="index.html">Privacy Policy/a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
         </div>
         <div class="footer-4-div">
             <p class="footer-sub-handing">Visit</p>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-           
+            <ul>
+                <li><a href="index.html">Careers</a></li>
+                <li><a href="index.html"> Appointments</a></li>
+                <li><a href="index.html">Patient Portal</a></li>
+                <li><a href="index.html">Find a Location</a></li>
+                <li><a href="index.html">Meet Our Doctors</a></li>
+            </ul>
+
         </div>
     </footer>
 
 
     <!-- footer section end -->
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
