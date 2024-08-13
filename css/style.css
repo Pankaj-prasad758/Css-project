@@ -10,11 +10,9 @@ html {
     width: 90vw;
     margin: 0 auto;
     scroll-behavior: smooth;
-    scroll-snap-type: Y proximity;
+    
 }
-section{
-    scroll-snap-align: start;
-}
+
 .container {
     max-width: 192rem;
     margin: 0 auto;
