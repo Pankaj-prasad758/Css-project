@@ -10,7 +10,7 @@ html {
     width: 90vw;
     margin: 0 auto;
     scroll-behavior: smooth;
-    
+
 }
 
 .container {
@@ -55,6 +55,7 @@ li {
 /* root */
 
 :root {
+    --new-footer-color: #1F316F;
     --main-color: #1471bc;
     --supporting-color: #F5DEB3;
     --font-color: #778899;
@@ -108,7 +109,7 @@ li {
 
 /* navbar start */
 .navbar-section {
-     
+
     width: 90vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -119,23 +120,27 @@ li {
     align-items: center;
     padding: 2rem 0;
 
-    & .navbar-brand a img{
+    & .navbar-brand a img {
         width: 12rem;
     }
 }
 
-.navbar-section .navbar .nav-ul-items{
+
+
+.navbar-section .navbar .nav-ul-items {
     display: flex;
     gap: 2rem;
-    
 
-    & li > a {
+
+
+    & li>a {
         font-weight: 600;
         color: var(--heading-color);
         text-transform: uppercase;
         display: inline-block;
         font-size: 2rem;
         position: relative;
+
 
         &::after {
             position: absolute;
@@ -266,9 +271,9 @@ main {
     width: 100%;
     margin: 0 auto;
     background-image: linear-gradient(90deg,
-            #ffffff,
-            #6dd5ed);
-
+            #F9DBBA,
+            #5B99C2);
+    margin-top: .5rem;
     position: relative;
 
 
@@ -282,7 +287,7 @@ main {
     height: auto;
     transform: scaleX(-1);
     border-radius: 1rem;
-    
+
 }
 
 
@@ -368,8 +373,8 @@ main {
     text-align: center;
 }
 
-.about-section .grid-three--col .about-div .icon p{
-  margin: 0 5rem;
+.about-section .grid-three--col .about-div .icon p {
+    margin: 0 5rem;
 }
 
 .about-section .grid-three--col .about-div .icon img {
@@ -507,7 +512,7 @@ main {
 /* hospital info section start */
 .comman-heading-hl {
     width: 6rem;
-    aspect-ratio: 1;
+    height: 6rem;
     background-color: var(--supporting-color);
     color: var(--heading-color);
     display: flex;
@@ -516,6 +521,8 @@ main {
     font-family: 2.5rem;
     font-weight: 700;
     border-radius: 50%;
+    text-align: center;
+    padding: 0;
 }
 
 
@@ -524,6 +531,7 @@ main {
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0;
 }
 
 
@@ -536,14 +544,14 @@ main {
 }
 
 .main-info {
-    gap: 9.6rem;
+    gap: 6.6rem;
 }
 
 .hospital-info .main-info .center-img figure .img-slider {
 
     width: 90%;
     height: auto;
-   
+
     filter: drop-shadow(2px 5px 10px rgb(103, 101, 101));
 
     /* margin-left: 3rem; */
@@ -561,14 +569,19 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
+    height: auto;
+    width: 70%;
+    height: 70%;
+
+    /* clip-path: circle(50% at 50% 50%); */
 }
 
 .center-img figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55rem;
-    width: 55rem;
+    height: auto;
+    width: 100%;
     position: relative;
 
     &:before {
@@ -620,6 +633,8 @@ main {
         background-color: rgb(227, 13, 74);
     }
 }
+
+
 
 .doctor-info {
     margin-top: 3.2rem;
@@ -690,7 +705,7 @@ main {
 /* <!-- footer section start --> */
 
 .footer-div {
-    background-color: #040d12;
+    background-color: var(--new-footer-color);
     padding-top: 15rem;
     text-align: right;
     padding: 15rem 15rem 5rem;
@@ -698,7 +713,11 @@ main {
     border-radius: .5rem;
 
 }
-.footer-2-div,.footer-3-div, p, ul li{
+
+.footer-2-div,
+.footer-3-div,
+p,
+ul li {
     padding-bottom: 1.5rem;
 }
 
@@ -797,7 +816,7 @@ footer * {
 }
 
 @media (width <=1400px) {
-   
+
 
     .main-section-top .grid-container-one .grid-content {
         padding-top: 7rem;
@@ -814,20 +833,30 @@ footer * {
         margin: 2rem 0 5rem 0;
     }
 
-   .blog-section .grid-four-col{
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-   }
+    .blog-section .grid-four-col {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
 
 
-@media (width <=1200px) {
+@media (width < 1200px) {
     html {
         font-size: 45%;
     }
 
+    main {
+        background-image: none;
+        margin-top: .5rem;
+
+    }
+
+    .main-section-top .grid-container-one {
+        column-gap: 2rem;
+
+    }
+
     .main-section-top .grid-container-one .grid-content {
-        padding: 3rem 0 3rem 0;
-        margin-top: 1rem;
+
 
         & .grid-content-btn {
             margin: 0 0 6rem 0;
@@ -835,8 +864,10 @@ footer * {
     }
 
     .main-section-top .grid-container-one .grid-img figure img {
-        width: 50rem;
-        height: auto;
+        width: 95%;
+        height: 60%;
+        margin: 0;
+
     }
 
     .custom-shape-divider-bottom-1723267518 svg {
@@ -845,32 +876,33 @@ footer * {
     }
 
     .mb-3 {
-      
+
         margin-bottom: 3.2rem;
     }
-    
+
     .contact-section>.grid-two-col {
         align-items: center;
         column-gap: 5rem;
     }
-    
+
     label {
         display: block;
         text-transform: uppercase;
     }
-    
+
     .grid-two-col {
 
         padding: 3rem 0 2rem 0;
-        grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
-    
-    
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+
     }
-    .map{
+
+    .map {
         height: 50rem;
         width: 50%;
     }
-    
+
     input,
     textarea {
         width: 80%;
@@ -880,15 +912,15 @@ footer * {
         letter-spacing: .1rem;
         text-transform: capitalize;
         display: inline-block;
-    
+
         align-items: start;
         justify-content: center;
     }
-    
-   
-    
-  
-    
+
+
+
+
+
     .contact-section .container:first-child {
         padding: 4.4rem 0 2.4rem 0;
     }
@@ -897,53 +929,53 @@ footer * {
         background-color: #040d12;
         margin: 0;
         padding: 0;
-     
+
         text-align: right;
         padding: 15rem 15rem 5rem;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         border-radius: .5rem;
-    
+
     }
-    
+
     .footer-1-div {
         text-align: left;
     }
-    
+
     .footer-1-div,
     .footer-2-div,
     .footer-3-div,
     .footer-4-div {
         margin-top: 5rem;
     }
-    
+
     footer * {
         color: #fff;
-    
+
     }
-    
+
     /* .footer-2-div {
         justify-content: right;
     } */
-    
+
     .footer-subheading {
         font-size: 2.2rem;
         font-weight: 700;
     }
-    
+
     .footer-1-div p {
         margin: 1.2rem 0 3.2rem 0;
     }
-    
+
     .footer-1-div .socail-footer-icon {
         display: flex;
         gap: 3rem;
-    
+
     }
 
 }
 
 @media (width <=1100px) {
-  .services-section .services-div-four {
+    .services-section .services-div-four {
 
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
@@ -1032,19 +1064,59 @@ footer * {
             grid-template-columns: 1fr;
         }
 
-        & .grid-img {
+        & .grid-img figure img {
             margin: 2rem auto 1rem;
             order: 1;
+
+
         }
 
     }
 
     .main-section-top .grid-container-one .grid-content {
         margin-top: -10rem;
+
+        & .grid-content-sub-heading {
+            text-align: left;
+            color: black;
+            padding: 0 3rem;
+            line-height: 1.4;
+            font-size: 2.5rem;
+        }
+
+        & .grid-content-main-heading {
+            text-align: left;
+            padding: 0 3rem;
+            line-height: 1.2;
+            font-size: 6rem;
+        }
+
+        & .content-para {
+            padding: 0 3rem;
+            text-align: left;
+            line-height: 1.2;
+            font-size: 2.2rem;
+        }
+
+        & .grid-content-btn {
+            margin: 3rem 0 2rem 0;
+
+            & a {
+                width: 40%;
+                text-align: center;
+                display: inline-block;
+            }
+        }
+
     }
 
     .main-section-top .grid-container-one {
         padding-bottom: 0;
+
+        & .grid-img figure img {
+            width: 100%;
+            padding: 0 3rem;
+        }
     }
 
     .grid-three--col {
@@ -1063,36 +1135,102 @@ footer * {
         padding: 0;
     }
 
+    .about-section .grid-three--col .about-div {
+        padding: 0;
+
+        & .icon {
+            margin: 2rem 0;
+            padding: 0 2rem;
+
+            & p {
+                padding: 0;
+                margin: 1rem 0;
+                font-size: 2.4rem;
+            }
+        }
+    }
+
     .services-section>.container {
         padding: 0 0 5rem 0;
     }
 
-    .footer-div {
-        grid-template-columns: repeat(3, minmax(250px, 1fr));
-        text-align: left;
-
-    }
+  
 
     .footer-div .footer-1-div {
         grid-row: 2/3;
         grid-column: -4/ -3;
     }
+
+    .footer-div{
+        font-size: 2.4rem;
+       
+      & .footer-1-div {
+        padding: 0;
+      
+      
+       
+        margin: 0 0 0 3rem;
+        & p{
+            display: none;
+        }
+        & .logo-brand a{
+            display: none;
+        }
+        & .socail-footer-icon {
+          align-items: start;
+        }
+       
+    }
+     
+    & .footer-2-div{
+        grid-row: 1 /2;
+        grid-column: 2/4;
+        text-align: left;
+        margin: 0 0 0 3rem;
+        padding: 0;
+    }
+    & .footer-3-div{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        grid-row: 1 /2;
+        grid-column: 1/2;
+    }
+
+    }
+    & .footer-4-div{
+        text-align: left;
+        margin: 0 3rem 0 0 ;
+        padding: 0;
+        grid-row: 1 /2;
+        grid-column: 3/5;
+    }
 }
 
-@media (width <=750px) {
+
+@media (width < 750px) {
 
     .grid-two-col,
     .grid-three--col {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .grid-container-one{
+
+    .grid-container-one {
         gap: 0;
     }
+
+    main {
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        background-image: none;
+    }
+
     .main-section-top .grid-container-one {
 
         align-items: center;
-    
+
         & .grid-content .grid-content-sub-heading {
             text-transform: uppercase;
             color: var(--main-color);
@@ -1101,80 +1239,71 @@ footer * {
             font-weight: 700;
             word-spacing: .2rem;
         }
-    
-        & .grid-container-one .grid-img figure img{
-            margin: 0;
+
+        & .grid-container-one .grid-img figure img {
+            margin: 4rem 4rem;
+
         }
-    
+
         & .grid-content .grid-content-btn {
-            margin-top:0;
+            margin-top: 0;
         }
-    
-     
-    
+
+
+
         & .grid-content .content-para {
             color: rgb(22, 22, 22);
-            padding: 1rem 0 4rem 0;
-           
-    
+            padding: 0 3rem;
+            margin: 3rem 0;
+
+
         }
-    
+
     }
 
     .main-info {
 
         padding-bottom: 2rem;
+
         & .grid-three--col-info .text-align--right .doctor-info {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: end;
             text-align: right;
-            
+
         }
+
         display: grid;
         grid-template-columns: 1fr;
 
-        & .main-info-left-div .left-div .doctor-info{
-            
+        & .main-info-left-div .left-div .doctor-info {
+
             text-align: start;
-            align-items:start;
+            align-items: start;
             margin-bottom: 2rem;
             /* justify-content: start; */
         }
-        & .main-info-right-div .right-div .doctor-info{
-            
-           
+
+        & .main-info-right-div .right-div .doctor-info {
+
+
             margin-bottom: 2rem;
             /* justify-content: start; */
         }
-      
-        & .center-img figure img{
-         width: 100%;
-         height: auto;
-         margin-top:10rem ;
-      
-         
+
+        & .center-img figure img {
+            width: 100%;
+            height: auto;
+            margin-top: 10rem;
+
+
         }
-    
-      
-    }
-
-    main {
-        height: auto;
-        width: 100%;
-        margin: 0 auto;
-        background-image: linear-gradient(90deg,
-                #ffffff,
-                #6dd5ed);
-
-        position: relative;
-        text-align: left;
-
-
 
 
     }
+
+
 
     .navbar-section .container {
         display: flex;
@@ -1194,9 +1323,9 @@ footer * {
         padding: 0 0;
         text-align: center;
         align-items: center;
-    
+
     }
-    
+
     .btn {
         padding: 1.2rem 3.2rem;
         background-color: var(--main-color);
@@ -1205,48 +1334,36 @@ footer * {
         border-radius: .6rem;
         margin-bottom: 2rem;
     }
-    
+
     .btn:hover {
         box-shadow: var(--btn-box-shadow);
         background-color: rgb(26, 26, 180);
         cursor: pointer;
-    
+
     }
-    
-    main {
-   
-      
-        margin: 0 auto;
-        background-image: linear-gradient(90deg,
-                #ffffff,
-                #6dd5ed);
-    
-        position: relative;
-    
-    
-    
-    
-    }
-    
+
+
     .grid-container-one .grid-img img {
-    
+
         width: 100%;
         height: auto;
         transform: scaleX(-1);
         border-radius: 1rem;
     }
- 
+
     .main-section-top .grid-container-one {
-        align-items: center; 
+        align-items: center;
     }
-    .footer-div{
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+
+    .footer-div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         padding: 10rem 1rem 10rem 1rem;
         margin-top: 25rem;
     }
-      /* contact-home-section start */
-      .contact-home-section {
+
+    /* contact-home-section start */
+    .contact-home-section {
         min-height: 20rem;
         width: 80%;
         margin: 0 auto;
@@ -1258,21 +1375,21 @@ footer * {
         bottom: -15rem;
         z-index: 11;
         background-color: var(--bg-color);
-    
+
         & .grid {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 2.4rem;
-    
+
         }
     }
-    
-    .contact-home-section .container{
+
+    .contact-home-section .container {
         gap: 3rem;
         padding: 1rem 2.5rem;
     }
-    
+
     .contact-home-section .fa-solid {
         margin-left: .5rem;
         font-size: 1.5rem;
@@ -1280,115 +1397,319 @@ footer * {
         background-color: white;
         color: var(--main-color);
     }
-    
+
     .contact-home-section a {
-        
+
         width: 100%;
         font-size: 1.5rem;
         color: white;
-        
+
         text-decoration: none;
         text-transform: capitalize;
     }
-    
+
     .contact-home-section .contact-image img {
         width: 100%;
         height: auto;
     }
-    
+
     .contact-title {
         font-size: 2.4rem;
         line-height: 1.2;
     }
-    
+
     .contact-content p {
         margin: 1.2rem 0 2.4rem 0;
     }
-    .contact-content{
+
+    .contact-content {
         width: 80%;
-    & .btn{
-        text-align: center;
-        width: 100%;
+
+        & .btn {
+            text-align: center;
+            width: 100%;
+        }
     }
-    }
-    .contact-image{
+
+    .contact-image {
         width: 40%;
         background-image: url(/images/docotr-2.jpg);
         background-size: cover;
     }
-      /* contact-home-section end */
 
-    .footer-div {
-        background-color: #040d12;
-       text-align: right;
-     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: .5rem;
-    
-    }
-    
-    .footer-1-div {
-        text-align: left;
-       padding: 0 0 3rem 18.5rem;
+    /* contact-home-section end */
 
-    }
-    
 
-    footer * {
-        color: #fff;
-    
-    }
-    
-    /* .footer-2-div {
-        justify-content: right;
-    } */
-    
-    .footer-subheading {
-        font-size: 2.2rem;
-        font-weight: 700;
-    }
-    
-    .footer-1-div p {
-        margin: 1.2rem 0 3.2rem 0;
-    }
-    
-    .footer-1-div .socail-footer-icon {
-        display: flex;
-        gap: 3rem;
-    
-    }
-    .footer-4-div{
-        padding-right: 4rem;
-    } 
-    
-    .footer-1-div .socail-footer-icon a {
-    
-        & .fa-brands {
-            font-size: 1rem;
-            width: 5rem;
-            border-radius: 50%;
-            height: 5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f7fcff;
-            color: var(--main-color);
-            transition: all .3s linear;
-    
-            &:hover {
-                background-color: var(--main-color);
-                color: #f7fcff;
-                rotate: 360deg;
+ 
+ 
+    .contact-home-section{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        & .grid-two--col{
+           display: flex;
+           flex-direction: column;
+            & .contact-content{
+             order: 2;
+           
+            }
+
+            & .contact-image{
+                height: 100%;
+                width: 100%;
+                background-size: contain;
+                background-image: url("/images/doctor-no-bg.png");
+                background-color: #EDE574;
+
+                & img{
+                 aspect-ratio: 3/2;
+                   
+                }
             }
         }
     }
 
-    .custom-shape-divider-bottom-1723267518{
+    .footer-div{
+        font-size: 2.4rem;
+       
+      & .footer-1-div {
+   
+        padding: 0;
         display: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 3rem;
+        & p{
+            display: none;
+        }
+        & .logo-brand a{
+            display: none;
+        }
+     
+       
     }
-    .grid-content-btn{
-        margin: 0!important;
+     
+    & .footer-2-div{
+        text-align: left;
+        margin: 0 0 0 3rem;
+        padding: 0;
     }
-}     
+    & .footer-3-div{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
 
+    }
+    & .footer-4-div{
+        text-align: left;
+        margin: 0 3rem 0 0 ;
+        padding: 0;
+     margin-left: 8rem;
+    }
+}
+
+@media (width < 550px) {
+  html{
+
+    /* width: 100vw; */
+    
+  }
+
+    main {
+        height: 50%;
+        width: 100%;
+        margin: 0 auto;
+        background-image: linear-gradient(90deg,
+                #F9DBBA,
+                #5B99C2);
+
+        margin-top: .5rem;
+        position: relative;
+
+        & .main-section-top {
+
+            & .grid-container-one {
+
+                & .grid-content {
+                    padding: 4rem 4rem;
+
+                    & .grid-content-btn {
+                        text-align: left;
+
+
+                        & a {
+                            width: 50%;
+                            display: inline-block;
+                            text-align: center;
+                        }
+                    }
+
+                    background: #EDE574;
+
+                    background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);
+
+                    background: linear-gradient(to right, #E1F5C4, #EDE574);
+
+
+                    & .grid-content-main-heading {
+                        text-align: left;
+                        font-size: 5rem;
+                        font-weight: 600;
+                        line-height: 1.2;
+                    }
+
+                    & .grid-content-sub-heading {
+                        color: var(--para-color);
+                        font-size: 2.8rem;
+                        text-align: left;
+                        line-height: 1.3;
+                        margin-bottom: 1rem;
+                    }
+
+                    & .content-para {
+                        text-align: left;
+                        line-height: 1.3;
+                        font-weight: 600;
+                        letter-spacing: .1rem;
+                        padding: 0 3rem;
+
+                    }
+
+                    & .grid-content-btn {
+                        padding: 0 3rem;
+
+                        & a {
+                            margin: 3rem 0 0 0;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        & .grid-img figure>img {
+            display: none;
+        }
+
+
+    }
+
+    .about-section .grid-three--col .about-div {
+        padding: 0;
+
+        & .icon {
+            margin: 2rem 0;
+            padding: 0 2rem;
+
+            & p {
+                padding: 0;
+                margin: 1rem 0;
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    .services-section .services-div-four .services-div {
+        padding: 0;
+
+        & .icon {
+            & p {
+                font-size: 2.4rem;
+            }
+
+            padding: 0 0 3rem 0;
+        }
+    }
+
+    .hospital-info .main-info .center-img figure{
+        margin: 0;
+        & img{
+            height: auto;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    
+    .contact-home-section{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        & .grid-two--col{
+           display: flex;
+           flex-direction: column;
+            & .contact-content{
+             order: 2;
+           
+            }
+
+            & .contact-image{
+                height: 100%;
+                width: 100%;
+                background-size: contain;
+                background-image: url("/images/doctor-no-bg.png");
+                background-color: #EDE574;
+
+                & img{
+                 aspect-ratio: 3/2;
+                   
+                }
+            }
+        }
+    }
+    
+    .footer-div{
+        width: 100%;
+        font-size: 2.4rem;
+       
+      & .footer-1-div {
+   
+        padding: 0;
+        display: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 3rem;
+        & p{
+            display: none;
+        }
+        & .logo-brand a{
+            display: none;
+        }
+     
+       
+    }
+     
+    & .footer-2-div{
+        text-align: left;
+        margin: 0 0 0 3rem;
+        padding: 0 15rem 0 0;
+    }
+    & .footer-3-div{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    }
+    & .footer-4-div{
+        text-align: left;
+        margin: 0 3rem 0 0 ;
+        padding: 0;
+    }
+  
+}
+
+@media (width < 410px ){
+    
+  footer{
+   & .footer-3-div{
+        text-align: left;
+        /* margin: 0 0 0 8rem; */
+    }
+   
+  }
+}
 
 /* media queries end */
